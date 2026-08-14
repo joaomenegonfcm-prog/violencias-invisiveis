@@ -33,16 +33,16 @@ Componentes do [shadcn/ui](https://ui.shadcn.com) são usados pontualmente, apen
 
 ## Roadmap
 
-- [x] **Fase 0** — Setup do projeto (Vite + React + TypeScript, Tailwind v4, shadcn/ui, estrutura de pastas)
-- [x] **Fase 1** — Tipos e estado global do jogo (`GameContext`, `useReducer`, persistência em `localStorage`)
-- [ ] **Fase 2** — Conteúdo narrativo dos nós (`src/content/nodes.ts`)
-- [ ] **Fase 3** — Home (hero, chamada para ação, canais de ajuda)
-- [ ] **Fase 4** — Mapa da trilha (navegação entre nós, status disponível/completo)
-- [ ] **Fase 5** — Cenas de diálogo e ligação telefônica
-- [ ] **Fase 6** — Cards de revelação (termo, explicação, sinais de alerta)
-- [ ] **Fase 7** — Aviso de conteúdo sensível e cena de violência obstétrica
-- [ ] **Fase 8** — Resumo final da trilha e saída rápida
-- [ ] **Fase 9** — Polimento: animações, partículas, acessibilidade e revisão final
+- [x] Fase 0 — Setup do projeto (Vite, Tailwind, fontes, tokens, shadcn/ui)
+- [x] Fase 1 — Tipos e estado global do jogo
+- [ ] Fase 2 — Conteúdo (roteiro completo dos 6 nós)
+- [ ] Fase 3 — Saída Rápida (feature de segurança)
+- [ ] Fase 4 — Home completa (Hero, Sobre, CTA, Canais de Ajuda)
+- [ ] Fase 5 — Mapa ilustrado da trilha
+- [ ] Fase 6 — Motor de cenas (dialogue / phone / narrative + revelação)
+- [ ] Fase 7 — Síntese / rede de apoio
+- [ ] Fase 8 — Polimento (responsividade, acessibilidade, reduced-motion)
+- [ ] Fase 9 — Deploy (Vercel)
 
 ## Preview
 
