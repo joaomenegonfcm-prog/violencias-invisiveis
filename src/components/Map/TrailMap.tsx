@@ -53,12 +53,12 @@ export function TrailMap() {
       >
         <path
           d="M0,120 C80,80 160,140 240,100 C320,60 360,110 400,90 L400,200 L0,200 Z"
-          fill="var(--color-plum-700)"
-          opacity="0.35"
+          fill="var(--color-dusk-800)"
+          opacity="0.4"
         />
         <path
           d="M0,160 C100,130 200,170 300,140 C350,125 380,150 400,140 L400,200 L0,200 Z"
-          fill="var(--color-dusk-800)"
+          fill="var(--color-dusk-950)"
           opacity="0.5"
         />
       </svg>
@@ -99,10 +99,10 @@ export function TrailMap() {
               d={TRAIL_PATH_D}
               fill="none"
               stroke="var(--color-mist-300)"
-              strokeWidth="0.4"
-              strokeDasharray="1.5 1.5"
+              strokeWidth="2"
+              strokeDasharray="6 5"
               strokeLinecap="round"
-              opacity="0.25"
+              opacity="0.4"
               vectorEffect="non-scaling-stroke"
             />
           </svg>
