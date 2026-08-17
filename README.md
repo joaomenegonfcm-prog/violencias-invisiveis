@@ -39,7 +39,7 @@ Componentes do [shadcn/ui](https://ui.shadcn.com) são usados pontualmente, apen
 - [x] Fase 3 — Saída Rápida (feature de segurança)
 - [x] Fase 4 — Home completa (Hero, Sobre, CTA, Canais de Ajuda)
 - [x] Fase 5 — Mapa ilustrado da trilha
-- [ ] Fase 6 — Motor de cenas (dialogue / phone / narrative + revelação)
+- [x] Fase 6 — Motor de cenas (dialogue / phone / narrative + revelação)
 - [ ] Fase 7 — Síntese / rede de apoio
 - [ ] Fase 8 — Polimento (responsividade, acessibilidade, reduced-motion)
 - [ ] Fase 9 — Deploy (Vercel)
