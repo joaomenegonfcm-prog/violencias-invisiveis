@@ -6,6 +6,7 @@ import { Home } from '@/components/Home/Home'
 import { TrailMap } from '@/components/Map/TrailMap'
 import { SceneContainer } from '@/components/Scenes/SceneContainer'
 import { ContentWarningDialog } from '@/components/Scenes/ContentWarningDialog'
+import { SummaryScreen } from '@/components/Summary/SummaryScreen'
 
 function AppContent() {
   const { state, dispatch } = useGame()
@@ -34,13 +35,7 @@ function AppContent() {
         ) : (
           <SceneContainer />
         ))}
-      {state.currentView === 'summary' && (
-        <div className="flex min-h-screen items-center justify-center bg-dusk-950">
-          <h1 className="font-display text-4xl text-mist-100">
-            Violências Invisíveis
-          </h1>
-        </div>
-      )}
+      {state.currentView === 'summary' && <SummaryScreen />}
     </>
   )
 }

@@ -185,7 +185,7 @@ export function SceneContainer() {
                 </div>
               ) : node.kind === 'narrative' ? (
                 <div className="mx-auto flex max-w-lg flex-col items-center gap-6 text-center">
-                  <p className="text-lg leading-relaxed text-mist-200">{beat.text}</p>
+                  <p className="text-lg leading-relaxed text-mist-100">{beat.text}</p>
                   <button
                     type="button"
                     onClick={advance}
