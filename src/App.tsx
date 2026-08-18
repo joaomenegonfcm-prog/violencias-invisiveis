@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { GameProvider, useGame } from '@/context/GameContext'
 import { QuickExitButton } from '@/components/QuickExit/QuickExitButton'
 import { QuickExitIntro } from '@/components/QuickExit/QuickExitIntro'
@@ -16,6 +16,13 @@ function AppContent() {
   // Persiste só durante esta sessão do app (reseta ao recarregar a página).
   // Fica fora do GameContext de propósito, não é progresso do jogo.
   const [obstetricaWarningSeen, setObstetricaWarningSeen] = useState(false)
+
+  // Cada view é uma tela própria, então trocar de view precisa começar do topo.
+  // Sem isso, sair da Home rolada (o CTA fica no meio da página) abre o mapa
+  // já rolado, escondendo o cabeçalho e o botão de voltar.
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [state.currentView])
 
   const showContentWarning =
     state.currentView === 'scene' &&
