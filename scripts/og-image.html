@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+        background: linear-gradient(160deg, #16142b 0%, #232042 55%, #3b2450 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+        position: relative;
+      }
+      .hills { position: absolute; inset: auto 0 0 0; width: 1200px; height: 260px; }
+      .lantern { position: relative; display: grid; place-items: center; margin-bottom: 6px; }
+      .glow {
+        position: absolute; width: 190px; height: 190px; border-radius: 50%;
+        background: #f2a65a; opacity: 0.30; filter: blur(46px);
+      }
+      .ring {
+        position: relative; width: 92px; height: 92px; border-radius: 50%;
+        border: 3px solid #f2a65a; display: grid; place-items: center;
+        background: radial-gradient(circle, rgba(242,166,90,0.35) 0%, rgba(242,166,90,0) 72%);
+      }
+      .diamond { width: 40px; height: 40px; background: #f2a65a; transform: rotate(45deg); border-radius: 5px; }
+      h1 {
+        position: relative;
+        font-family: 'Fraunces', Georgia, serif;
+        font-weight: 600;
+        font-size: 92px;
+        line-height: 1.05;
+        color: #e8e3f0;
+        letter-spacing: -0.01em;
+      }
+      p {
+        position: relative;
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 500;
+        font-size: 25px;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+        color: #f2a65a;
+      }
+      .credit {
+        position: absolute; bottom: 42px;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 18px; letter-spacing: 0.14em;
+        color: #c9c2da; opacity: 0.75; text-transform: none;
+      }
+    </style>
+  </head>
+  <body>
+    <svg class="hills" viewBox="0 0 1200 260" preserveAspectRatio="none">
+      <path d="M0,150 C200,95 400,175 620,125 C820,80 1000,140 1200,110 L1200,260 L0,260 Z" fill="#2f2a52" opacity="0.45" />
+      <path d="M0,200 C260,160 520,215 780,175 C950,150 1080,190 1200,175 L1200,260 L0,260 Z" fill="#16142b" opacity="0.6" />
+    </svg>
+
+    <div class="lantern">
+      <div class="glow"></div>
+      <div class="ring"><div class="diamond"></div></div>
+    </div>
+
+    <h1>Violências Invisíveis</h1>
+    <p>Uma trilha ao entardecer</p>
+    <span class="credit">Projeto acadêmico, CIEE / Jovem Aprendiz</span>
+  </body>
+</html>
