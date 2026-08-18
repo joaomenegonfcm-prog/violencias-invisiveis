@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { GameProvider, useGame } from '@/context/GameContext'
 import { QuickExitButton } from '@/components/QuickExit/QuickExitButton'
+import { QuickExitIntro } from '@/components/QuickExit/QuickExitIntro'
 import { useQuickExitShortcut } from '@/components/QuickExit/useQuickExitShortcut'
 import { Home } from '@/components/Home/Home'
 import { TrailMap } from '@/components/Map/TrailMap'
@@ -24,6 +25,7 @@ function AppContent() {
   return (
     <>
       <QuickExitButton />
+      <QuickExitIntro />
       {state.currentView === 'home' && <Home />}
       {state.currentView === 'map' && <TrailMap />}
       {state.currentView === 'scene' &&
