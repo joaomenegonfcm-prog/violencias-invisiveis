@@ -2,6 +2,8 @@ import { motion, useReducedMotion, type Variants } from 'framer-motion'
 import { Check, Diamond } from 'lucide-react'
 import { useGame } from '@/context/GameContext'
 import { NODES, getNode } from '@/content/nodes'
+import { HELP_CHANNELS } from '@/content/helpChannels'
+import { HelpChannelCard } from '@/components/shared/HelpChannelCard'
 import { cn } from '@/lib/utils'
 
 const TRAIL_NODES = NODES.filter((node) => node.kind !== 'summary')
@@ -131,24 +133,27 @@ export function SummaryScreen() {
           })}
         </motion.ul>
 
-        <section className="flex flex-col gap-3">
+        <section className="flex flex-col gap-4">
           <h2 className="font-mono text-xs tracking-widest text-rose-complete uppercase">
             Rede de Apoio
           </h2>
-          <ul className="flex flex-col gap-2">
-            {SUMMARY_NODE.reveal.signs.map((channel) => (
-              <li
-                key={channel}
-                className="flex items-start gap-2 text-sm text-mist-100"
-              >
-                <span
-                  aria-hidden="true"
-                  className="mt-2 size-1.5 shrink-0 rounded-full bg-rose-complete"
+          <motion.ul
+            variants={gridVariants}
+            initial="hidden"
+            animate="visible"
+            className="grid grid-cols-1 gap-4 sm:grid-cols-2"
+          >
+            {HELP_CHANNELS.map((channel) => (
+              <motion.li key={channel.id} variants={itemVariants}>
+                <HelpChannelCard
+                  icon={channel.icon}
+                  title={channel.title}
+                  description={channel.description}
+                  href={channel.href}
                 />
-                <span>{channel}</span>
-              </li>
+              </motion.li>
             ))}
-          </ul>
+          </motion.ul>
         </section>
 
         <button
