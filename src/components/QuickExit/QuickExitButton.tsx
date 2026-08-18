@@ -1,5 +1,5 @@
 /**
- * Saída Rápida — feature de segurança presente em todas as telas do app.
+ * Saída Rápida: feature de segurança presente em todas as telas do app.
  *
  * O visual é deliberadamente invertido em relação ao resto do site (pill
  * claro sobre fundo escuro, sempre 100% opaco): precisa ser reconhecido
@@ -16,7 +16,7 @@
  *    deve reaparecer no histórico (window.location.replace substitui a
  *    entrada atual em vez de empilhar uma nova).
  * 4. Sem usar o mouse, dê Tab até focar o botão: deve aparecer o contorno
- *    âmbar de :focus-visible. O botão é opaco em repouso — não existe mais
+ *    âmbar de :focus-visible. O botão é opaco em repouso, não existe mais
  *    fade-in por hover/foco (comportamento removido de propósito).
  * 5. Pressione Esc uma vez: nada deve acontecer (ou, se algum Dialog do
  *    shadcn estiver aberto na tela, ele deve fechar normalmente, sem que
@@ -24,7 +24,7 @@
  *    a página deve navegar para o Google imediatamente.
  * 6. Espere mais de 1 segundo entre dois Esc: nenhuma saída deve disparar
  *    (o contador de duplo-Esc deve reiniciar).
- * 7. Opcional: desative o JavaScript do navegador e clique no link — por
+ * 7. Opcional: desative o JavaScript do navegador e clique no link. Por
  *    ser um <a href> real, o navegador ainda deve navegar via fallback
  *    nativo do HTML, sem depender do onClick.
  */

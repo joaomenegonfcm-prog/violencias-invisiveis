@@ -6,7 +6,7 @@ const DOUBLE_PRESS_WINDOW_MS = 1000
 /**
  * Atalho de teclado global: Esc pressionado duas vezes em menos de 1s
  * dispara a saída de emergência. Apenas observa (sem preventDefault ou
- * stopPropagation), então não interfere no primeiro Esc — por exemplo,
+ * stopPropagation), então não interfere no primeiro Esc. Por exemplo,
  * o Dialog do shadcn/ui continua fechando normalmente na primeira vez.
  */
 export function useQuickExitShortcut() {

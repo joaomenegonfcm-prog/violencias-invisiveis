@@ -77,7 +77,7 @@ export function SummaryScreen() {
               {remaining === 1
                 ? 'Ainda falta 1 lanterna para acender na trilha.'
                 : `Ainda faltam ${remaining} lanternas para acender na trilha.`}{' '}
-              Se quiser, volte ao mapa antes de seguir — mas esta síntese
+              Se quiser, volte ao mapa antes de seguir, mas esta síntese
               continua aqui, disponível a qualquer momento.
             </p>
           </div>
@@ -125,7 +125,7 @@ export function SummaryScreen() {
                 >
                   {node.mapLabel}
                   <span className="sr-only">
-                    {isNodeComplete ? ' — concluído' : ' — ainda não visitado'}
+                    {isNodeComplete ? ': concluído' : ': ainda não visitado'}
                   </span>
                 </span>
               </motion.li>

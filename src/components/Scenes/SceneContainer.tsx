@@ -7,7 +7,7 @@ import { RevealCard } from '@/components/Reveal/RevealCard'
 import { useSceneFlow } from './useSceneFlow'
 
 // Fallback tipado pro caso defensivo de activeNodeId não corresponder a
-// nenhum nó (não deve acontecer em uso normal — OPEN_NODE sempre recebe um
+// nenhum nó (não deve acontecer em uso normal, OPEN_NODE sempre recebe um
 // NodeId válido). Existe só pra manter useSceneFlow chamado incondicionalmente
 // (regra dos hooks), sem recorrer a cast inseguro.
 const EMPTY_NODE: NodeContent = {

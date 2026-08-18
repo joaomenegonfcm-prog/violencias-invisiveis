@@ -17,7 +17,7 @@ const ACTION_BUTTON_CLASS =
 
 /**
  * Esc, clique no X e clique fora do dialog disparam onOpenChange(false), que
- * tratamos aqui como equivalente a "Continuar" — dispensar o aviso não deve
+ * tratamos aqui como equivalente a "Continuar". Dispensar o aviso não deve
  * ser interpretado como a escolha ativa de pular a cena, que exige clique
  * explícito em "Pular esta cena".
  *
@@ -26,7 +26,7 @@ const ACTION_BUTTON_CLASS =
  * DismissableLayer do Radix (por trás do Dialog) também não faz
  * stopPropagation no Esc. Ou seja, o Esc que fecha este dialog CONTINUA
  * contando como a primeira das duas pressionadas necessárias pra saída de
- * emergência — comportamento já esperado/documentado na Fase 3, não é um
+ * emergência. Comportamento já esperado/documentado na Fase 3, não é um
  * bug novo introduzido aqui.
  */
 export function ContentWarningDialog({ onContinue, onSkip }: ContentWarningDialogProps) {

@@ -89,7 +89,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(Array.from(state.completedNodes)))
     } catch {
-      // localStorage indisponível ou cheio — progresso segue apenas em memória
+      // localStorage indisponível ou cheio, progresso segue apenas em memória
     }
   }, [state.completedNodes])
 

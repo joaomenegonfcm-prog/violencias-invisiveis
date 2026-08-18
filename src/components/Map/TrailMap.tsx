@@ -78,7 +78,7 @@ export function TrailMap() {
           Violências Invisíveis
         </h1>
         <p className="max-w-md text-sm text-mist-300">
-          Cada lanterna guarda uma cena. Escolha por onde quiser começar — não
+          Cada lanterna guarda uma cena. Escolha por onde quiser começar, não
           existe ordem certa.
         </p>
         <p className="font-mono text-xs text-mist-300">
@@ -131,7 +131,7 @@ export function TrailMap() {
           <motion.button
             type="button"
             onClick={() => dispatch({ type: 'OPEN_SUMMARY' })}
-            aria-label={`${SUMMARY_NODE.mapLabel} — sempre disponível`}
+            aria-label={`${SUMMARY_NODE.mapLabel}: sempre disponível`}
             className="group absolute flex min-h-11 min-w-11 -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-2 p-3"
             style={{
               left: `${SUMMARY_NODE.position.x}%`,

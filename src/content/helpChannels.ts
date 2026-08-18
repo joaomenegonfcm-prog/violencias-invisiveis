@@ -14,7 +14,7 @@ export interface HelpChannel {
   href: string
 }
 
-// Fonte única dos canais de ajuda — consumida pela Home e pela Síntese para
+// Fonte única dos canais de ajuda, consumida pela Home e pela Síntese para
 // que as duas telas nunca divirjam em conteúdo ou destino dos links.
 export const HELP_CHANNELS: HelpChannel[] = [
   {
@@ -28,9 +28,9 @@ export const HELP_CHANNELS: HelpChannel[] = [
   {
     id: 'cvv-188',
     icon: MessageCircle,
-    title: 'CVV — 188',
+    title: 'CVV 188',
     description:
-      'Apoio emocional e prevenção do suicídio. Ligação, chat ou e-mail, 24h — cvv.org.br',
+      'Apoio emocional e prevenção do suicídio. Ligação, chat ou e-mail, 24h. cvv.org.br',
     href: 'tel:188',
   },
   {
@@ -45,7 +45,7 @@ export const HELP_CHANNELS: HelpChannel[] = [
     icon: HeartHandshake,
     title: 'Mapa do Acolhimento',
     description:
-      'Encaminhamento gratuito a psicólogas e advogadas voluntárias — mapadoacolhimento.org',
+      'Encaminhamento gratuito a psicólogas e advogadas voluntárias. mapadoacolhimento.org',
     href: 'https://mapadoacolhimento.org',
   },
 ]

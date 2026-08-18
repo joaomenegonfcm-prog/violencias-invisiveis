@@ -13,8 +13,8 @@ function AppContent() {
   const { state, dispatch } = useGame()
   useQuickExitShortcut()
 
-  // Persiste só durante esta sessão do app (reseta ao recarregar a página) —
-  // fica fora do GameContext de propósito, não é progresso do jogo.
+  // Persiste só durante esta sessão do app (reseta ao recarregar a página).
+  // Fica fora do GameContext de propósito, não é progresso do jogo.
   const [obstetricaWarningSeen, setObstetricaWarningSeen] = useState(false)
 
   const showContentWarning =

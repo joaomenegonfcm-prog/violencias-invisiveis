@@ -13,7 +13,7 @@ interface MapNodeProps {
 export function MapNode({ node, status, onSelect, delay }: MapNodeProps) {
   const prefersReducedMotion = useReducedMotion()
   const isCompleted = status === 'completed'
-  const ariaLabel = isCompleted ? `${node.mapLabel} — concluído` : node.mapLabel
+  const ariaLabel = isCompleted ? `${node.mapLabel}: concluído` : node.mapLabel
   const shouldFlicker = !isCompleted && !prefersReducedMotion
 
   return (

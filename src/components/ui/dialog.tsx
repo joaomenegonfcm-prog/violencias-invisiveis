@@ -33,7 +33,7 @@ function DialogClose({
 
 // forwardRef é necessário porque o projeto usa React 18: a CLI do shadcn gera
 // estes componentes no estilo React 19 (ref como prop comum), e sem o
-// forwardRef o ref que o Presence do Radix anexa aqui nunca chega ao nó —
+// forwardRef o ref que o Presence do Radix anexa aqui nunca chega ao nó,
 // além de emitir warning no console em toda abertura de dialog.
 const DialogOverlay = React.forwardRef<
   React.ComponentRef<typeof DialogPrimitive.Overlay>,
@@ -77,7 +77,7 @@ const DialogContent = React.forwardRef<
         {showCloseButton && (
           <DialogPrimitive.Close data-slot="dialog-close" asChild>
             {/* Visual de 28px com área de toque expandida a 44px via ::before,
-                conforme AGENTS.md (Targets & Input) — evita alargar o botão e
+                conforme AGENTS.md (Targets & Input). Evita alargar o botão e
                 empurrar o título do dialog. */}
             <Button
               variant="ghost"

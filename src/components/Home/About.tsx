@@ -7,8 +7,8 @@ import { useGame } from '@/context/GameContext'
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 const PARAGRAPHS = [
-  'A trilha é um mapa com pontos espalhados — cada lanterna representa uma cena. Não existe ordem certa: você escolhe por onde começar e pode visitar os nós na sequência que preferir.',
-  'Cada nó abre uma cena curta do cotidiano — uma troca de mensagens, uma ligação, um momento qualquer — não um texto explicativo. A explicação só aparece depois, quando a cena revela o que estava por trás dela.',
+  'A trilha é um mapa com pontos espalhados: cada lanterna representa uma cena. Não existe ordem certa, você escolhe por onde começar e pode visitar os nós na sequência que preferir.',
+  'Cada nó abre uma cena curta do cotidiano: uma troca de mensagens, uma ligação, um momento qualquer. Não é um texto explicativo. A explicação só aparece depois, quando a cena revela o que estava por trás dela.',
   'Você pode explorar com tranquilidade: as escolhas dentro de cada cena não têm certo ou errado, elas só mudam como a cena se desenrola. A reflexão sobre o que aconteceu vem sempre depois, no card de revelação.',
 ]
 

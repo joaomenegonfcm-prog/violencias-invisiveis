@@ -14,7 +14,7 @@ function hasSeenIntro(): boolean {
   try {
     return sessionStorage.getItem(STORAGE_KEY) === 'true'
   } catch {
-    // sessionStorage indisponível (modo privado, cookies bloqueados) — mostra
+    // sessionStorage indisponível (modo privado, cookies bloqueados): mostra
     // o aviso; repetir é preferível a esconder informação de segurança.
     return false
   }
@@ -25,7 +25,7 @@ function hasSeenIntro(): boolean {
  * outra interação. Marcado em sessionStorage de propósito: em uma nova visita
  * a orientação aparece de novo, mas navegar entre telas não repete o aviso.
  *
- * Esc, clique fora e o X fecham o dialog e contam como "Entendi" — dispensar
+ * Esc, clique fora e o X fecham o dialog e contam como "Entendi". Dispensar
  * a orientação não deve prendê-la de volta na tela.
  *
  * Nota sobre a Saída Rápida (Fase 3): o Esc que fecha este dialog continua

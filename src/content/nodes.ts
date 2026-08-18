@@ -20,7 +20,7 @@ export const NODES: NodeContent[] = [
         options: [
           {
             id: 'responde-na-hora',
-            label: '"Desculpa, tava sem sinal" — responder na hora, pra evitar confusão',
+            label: '"Desculpa, tava sem sinal": responder na hora, pra evitar confusão',
             response:
               'Marina sente o estômago apertar e digita a desculpa, mesmo sabendo que não fez nada de errado.',
           },
@@ -28,7 +28,7 @@ export const NODES: NodeContent[] = [
             id: 'questiona',
             label: '"Eu tava só jantando com as amigas, não preciso avisar toda hora"',
             response:
-              'Rafael demora pra responder. Quando responde, é só um "ok" — e Marina passa o resto da noite se perguntando se ele ficou chateado.',
+              'Rafael demora pra responder. Quando responde, é só um "ok", e Marina passa o resto da noite se perguntando se ele ficou chateado.',
           },
         ],
       },
@@ -36,7 +36,7 @@ export const NODES: NodeContent[] = [
     reveal: {
       term: 'Violência Psicológica',
       explanation:
-        'Ciúme excessivo, cobrança de satisfação constante e culpa disfarçada de cuidado são formas de controle emocional. O termo técnico é gaslighting quando isso é usado pra fazer a pessoa duvidar da própria percepção — "eu só faço isso porque te amo" é uma frase clássica de manipulação, não de zelo genuíno.',
+        'Ciúme excessivo, cobrança de satisfação constante e culpa disfarçada de cuidado são formas de controle emocional. O termo técnico é gaslighting quando isso é usado pra fazer a pessoa duvidar da própria percepção: "eu só faço isso porque te amo" é uma frase clássica de manipulação, não de zelo genuíno.',
       signs: [
         'Cobrar satisfações sobre horários e companhias',
         'Fazer a pessoa se sentir culpada por ter uma vida social própria',
@@ -64,7 +64,7 @@ export const NODES: NodeContent[] = [
         options: [
           {
             id: 'aceita-esperar',
-            label: '"Tudo bem, te mando o link" — aceitar esperar aprovação',
+            label: '"Tudo bem, te mando o link": aceitar esperar aprovação',
             response:
               'Camila manda o link. Três dias depois, ainda não teve resposta. O curso já não tem mais vaga.',
           },
@@ -124,7 +124,7 @@ export const NODES: NodeContent[] = [
     reveal: {
       term: 'Violência Digital (Stalking)',
       explanation:
-        'Pedir senha de redes sociais, monitorar localização em tempo real ou vigiar conversas são formas de controle que usam a tecnologia como ferramenta. A frase "se não tem nada a esconder" é uma forma comum de fazer a vigilância parecer razoável — mas privacidade não é a mesma coisa que estar escondendo algo.',
+        'Pedir senha de redes sociais, monitorar localização em tempo real ou vigiar conversas são formas de controle que usam a tecnologia como ferramenta. A frase "se não tem nada a esconder" é uma forma comum de fazer a vigilância parecer razoável, mas privacidade não é a mesma coisa que estar escondendo algo.',
       signs: [
         'Pedir ou exigir senhas de redes sociais e aplicativos',
         'Monitorar localização, mensagens ou ligações sem consentimento real',
@@ -140,7 +140,7 @@ export const NODES: NodeContent[] = [
     mapLabel: 'Violência Obstétrica',
     position: { x: 68, y: 56 },
     intro:
-      'Renata está em trabalho de parto há seis horas. Ela pede para mudar de posição — a dor na lombar está insuportável.',
+      'Renata está em trabalho de parto há seis horas. Ela pede para mudar de posição: a dor na lombar está insuportável.',
     beats: [
       {
         speaker: 'Narrador',
@@ -155,13 +155,13 @@ export const NODES: NodeContent[] = [
       {
         speaker: 'Narrador',
         text:
-          'Renata sai da maternidade com o filho saudável nos braços — e uma sensação que vai levar meses pra conseguir nomear.',
+          'Renata sai da maternidade com o filho saudável nos braços, e uma sensação que vai levar meses pra conseguir nomear.',
       },
     ],
     reveal: {
       term: 'Violência Obstétrica',
       explanation:
-        'Toda pessoa em trabalho de parto tem direito a receber explicações claras e a consentir ou recusar procedimentos. Ignorar a dor relatada, impor posições por conveniência da equipe (e não da paciente) ou realizar intervenções sem explicação e sem consentimento são formas de violência obstétrica — mesmo quando o resultado médico é "positivo".',
+        'Toda pessoa em trabalho de parto tem direito a receber explicações claras e a consentir ou recusar procedimentos. Ignorar a dor relatada, impor posições por conveniência da equipe (e não da paciente) ou realizar intervenções sem explicação e sem consentimento são formas de violência obstétrica, mesmo quando o resultado médico é "positivo".',
       signs: [
         'Procedimentos realizados sem explicação ou consentimento',
         'Dor relatada sendo minimizada ou ignorada',
@@ -191,7 +191,7 @@ export const NODES: NodeContent[] = [
             id: 'insiste-registro',
             label: 'Insistir e pedir para falar com outro atendente',
             response:
-              'Depois de repetir a mesma história duas vezes, o boletim é finalmente registrado — mas Juliana sai da delegacia se sentindo mais exausta do que quando chegou.',
+              'Depois de repetir a mesma história duas vezes, o boletim é finalmente registrado, mas Juliana sai da delegacia se sentindo mais exausta do que quando chegou.',
           },
           {
             id: 'desiste',
@@ -225,7 +225,7 @@ export const NODES: NodeContent[] = [
     reveal: {
       term: 'O Ecossistema das Violências Invisíveis',
       explanation:
-        'Psicológica, patrimonial, digital, obstétrica e institucional — nenhuma dessas formas deixa hematoma, mas todas deixam marca. Elas raramente aparecem sozinhas: normalmente se entrelaçam e se reforçam. Reconhecer os sinais é o primeiro passo pra romper o ciclo, tanto pra quem vive quanto pra quem observa de fora.',
+        'Psicológica, patrimonial, digital, obstétrica e institucional: nenhuma dessas formas deixa hematoma, mas todas deixam marca. Elas raramente aparecem sozinhas: normalmente se entrelaçam e se reforçam. Reconhecer os sinais é o primeiro passo pra romper o ciclo, tanto pra quem vive quanto pra quem observa de fora.',
       signs: [
         'Central de Atendimento à Mulher: Ligue 180',
         'Emergência: 190 (Polícia Militar)',
