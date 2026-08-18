@@ -41,7 +41,7 @@ Componentes do [shadcn/ui](https://ui.shadcn.com) são usados pontualmente, apen
 - [x] Fase 5 — Mapa ilustrado da trilha
 - [x] Fase 6 — Motor de cenas (dialogue / phone / narrative + revelação)
 - [x] Fase 7 — Síntese / rede de apoio
-- [ ] Fase 8 — Polimento (responsividade, acessibilidade, reduced-motion)
+- [x] Fase 8 — Polimento (responsividade, acessibilidade, reduced-motion)
 - [ ] Fase 9 — Deploy (Vercel)
 
 ## Preview
